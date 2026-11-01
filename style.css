@@ -15,3 +15,5 @@ footer a{color:#ff8a00}
 .strip figure{flex:0 0 220px;margin:0;background:#15151b;border:2px solid #ff4d1a;border-radius:14px;overflow:hidden;scroll-snap-align:start;text-align:left}
 .strip img{width:100%;display:block}.strip figcaption{padding:10px;font-size:13px;display:flex;flex-direction:column;gap:6px}.strip b{font-family:monospace;color:#aaa}.strip em{font-style:normal;font-weight:900;color:#ff4d1a;font-size:20px}
 #rekt .btns a{display:inline-block;padding:10px 18px;margin:4px;border-radius:999px;background:#ff4d1a;color:#000;font-weight:900;text-decoration:none}
+
+#ff{display:flex;gap:8px;margin-top:10px}#ff input{flex:1}#fgo{background:#222;color:#ffd34d;border:2px solid #ffd34d}
