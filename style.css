@@ -9,3 +9,4 @@ canvas{width:100%;height:auto;border-radius:18px;box-shadow:0 0 40px #ff4d1a55}.
 .coin{margin-top:32px;padding:20px;border:2px dashed #ff4d1a;border-radius:18px}.coin h2{margin:0;color:#ff4d1a}
 footer{padding:24px;font-size:12px;color:#777}
 footer a{color:#ff8a00}
+#ca{margin:24px auto;max-width:520px;padding:16px;border:2px solid #ff4d1a;border-radius:12px;text-align:center}#ca code{word-break:break-all;display:block;margin:8px 0}#ca p{font-size:13px;opacity:.8}

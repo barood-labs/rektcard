@@ -16,9 +16,10 @@ async function roast(q){q=q.trim();const k=kind(q);if(!k){$('status').textConten
  $('status').textContent='Reading the chain… 🔍';$('go').disabled=true;let lines,title;
  try{if(k==='x'){const h='@'+q.replace(/^@/,'');title=h;lines=Roasts.handleRoast(h)}else{const s=k==='sol'?await solStats(q):await ethStats(q);title=short(q)+' · '+s.unit;lines=Roasts.walletRoast(s,q);window.__stats=s}
   const sc=Roasts.score(q);draw(title,lines,sc);$('out').hidden=false;$('status').textContent='';
-  $('tw').href='https://x.com/intent/post?text='+encodeURIComponent(`I just got roasted by Rektcard 🔥 Rekt score: ${sc}%\n"${lines[0]}"\n\nGet yours via @Rektcardxyz:`)+'&url='+encodeURIComponent(location.origin+location.pathname);
+  $('tw').href='https://x.com/intent/post?text='+encodeURIComponent(`I just got roasted by Rektcard 🔥 Rekt score: ${sc}%\n"${lines[0]}"\n\nGet yours via @Rektcardxyz:`)+'&url='+encodeURIComponent('https://rektcard.fun');
   $('out').scrollIntoView({behavior:'smooth'})}catch(e){$('status').textContent='Chain is being shy right now — try again in a sec.'}finally{$('go').disabled=false}}
 $('f').onsubmit=e=>{e.preventDefault();roast($('q').value)};$('again').onclick=()=>{$('q').value='';$('out').hidden=true;$('q').focus()};
 $('dl').onclick=()=>{const a=document.createElement('a');a.download='rektcard.png';a.href=$('card').toDataURL('image/png');a.click()};
 $('share').onclick=()=>$('card').toBlob(async b=>{const f=new File([b],'rektcard.png',{type:'image/png'});if(navigator.canShare&&navigator.canShare({files:[f]}))await navigator.share({files:[f],text:'Got roasted by Rektcard 🔥'}).catch(()=>{});else $('dl').click()});
 const p=new URLSearchParams(location.search).get('q');if(p){$('q').value=p;roast(p)}
+if(typeof CA==='string'&&CA.trim()){$('caval').textContent=CA.trim();$('ca').hidden=false;$('cacopy').onclick=()=>navigator.clipboard.writeText(CA.trim()).then(()=>{$('cacopy').textContent='Copied ✓';setTimeout(()=>$('cacopy').textContent='Copy',1500)})}
