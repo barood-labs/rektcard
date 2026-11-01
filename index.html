@@ -1,5 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Rektcard — get your wallet roasted</title><meta name="description" content="Paste a wallet or X handle. Get roasted. For fun only.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://rektcard.fun/"><meta property="og:title" content="Rektcard — AI roasts your wallet 🔥"><meta property="og:description" content="Paste a Solana/ETH wallet or X handle, get your Rekt Score. Read-only. For fun only."><meta property="og:image" content="https://rektcard.fun/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@Rektcardxyz"><meta name="twitter:title" content="Rektcard — AI roasts your wallet 🔥"><meta name="twitter:description" content="Paste a wallet or X handle, get your Rekt Score. Read-only. NFA."><meta name="twitter:image" content="https://rektcard.fun/og-image.png">
 <link rel="icon" href="logo.png"><link rel="stylesheet" href="style.css"></head><body>
 <header><img src="logo.png" alt="" class="logo"><h1>REKT<span>CARD</span></h1><a class="xbtn" href="https://x.com/Rektcardxyz" target="_blank" rel="noopener" aria-label="Follow @Rektcardxyz on X"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>Follow on X</a></header>
 <main>
@@ -9,7 +11,13 @@
 <p id="status" role="status"></p>
 <section id="out" hidden><canvas id="card" width="1080" height="1350"></canvas>
 <div class="btns"><button id="dl">⬇ Save card</button><button id="share">Share</button><a id="tw" target="_blank" rel="noopener">Post on X</a><button id="again">Roast again</button></div></section>
-<section class="coin"><h2>$TICKER</h2><p>Coming soon. No contract address exists yet — anyone posting one is not us.</p></section>
+<section class="top"><h2>Top roasts 🔥</h2><p class="note">Example cards — fake wallets.</p><div class="strip">
+<figure><img src="img/clown.webp" alt="Clown holding bags" loading="lazy"><figcaption><b>0xDEAD…BEEF</b><span>Bought 30 coins, all named after dogs. Kept the bags, lost the plot.</span><em>87% REKT</em></figcaption></figure>
+<figure><img src="img/rug.webp" alt="Rug being pulled" loading="lazy"><figcaption><b>Fake1…Wa11</b><span>Your portfolio has more rugs than a carpet store.</span><em>93% REKT</em></figcaption></figure>
+<figure><img src="img/rocket.webp" alt="Rocket crashed" loading="lazy"><figcaption><b>@example_degen</b><span>Said "to the moon" 400 times. Moon has blocked you.</span><em>12% REKT</em></figcaption></figure>
+</div></section>
+<section class="coin" id="rekt" hidden><h2>$REKT</h2><p>The official Rektcard coin. NFA.</p><div class="btns"><a id="buy" target="_blank" rel="noopener" hidden>Buy $REKT</a><a id="chart" target="_blank" rel="noopener" hidden>Chart</a></div></section>
+<section class="coin" id="soon"><h2>$REKT</h2><p>Coming soon. No contract address exists yet — anyone posting one is not us.</p></section>
 <section id="ca" hidden><h3>Contract address</h3><code id="caval"></code> <button id="cacopy" type="button">Copy</button><p>Only trust the CA shown here and on @Rektcardxyz. NFA.</p></section>
 </main>
 <footer><a href="https://x.com/Rektcardxyz" target="_blank" rel="noopener">Follow @Rektcardxyz on X</a><br>For fun only. Not financial advice. Roasts are jokes generated from public data and templates — don't take them personally.</footer>

@@ -11,3 +11,7 @@ footer{padding:24px;font-size:12px;color:#777}
 footer a{color:#ff8a00}
 #ca{margin:24px auto;max-width:520px;padding:16px;border:2px solid #ff4d1a;border-radius:12px;text-align:center}#ca code{word-break:break-all;display:block;margin:8px 0}#ca p{font-size:13px;opacity:.8}
 .xbtn{display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:10px 18px;border-radius:999px;background:#fff;color:#000;font-weight:900;font-size:15px;text-decoration:none;border:2px solid #ff4d1a;box-shadow:0 0 18px #ff4d1a55}.xbtn:hover{background:#ff4d1a}@media(max-width:480px){.xbtn{padding:12px 20px;font-size:16px}}
+.top{margin-top:32px}.top h2{color:#ff4d1a;margin:0}.strip{display:flex;gap:12px;overflow-x:auto;padding:8px 0;scroll-snap-type:x mandatory}
+.strip figure{flex:0 0 220px;margin:0;background:#15151b;border:2px solid #ff4d1a;border-radius:14px;overflow:hidden;scroll-snap-align:start;text-align:left}
+.strip img{width:100%;display:block}.strip figcaption{padding:10px;font-size:13px;display:flex;flex-direction:column;gap:6px}.strip b{font-family:monospace;color:#aaa}.strip em{font-style:normal;font-weight:900;color:#ff4d1a;font-size:20px}
+#rekt .btns a{display:inline-block;padding:10px 18px;margin:4px;border-radius:999px;background:#ff4d1a;color:#000;font-weight:900;text-decoration:none}
