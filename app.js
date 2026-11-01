@@ -11,7 +11,7 @@ const memeFor=s=>MEMES[Math.min(5,Math.floor((s-1)/16.5))];
 function draw(title,lines,score){const c=$('card').getContext('2d'),W=1080,H=1350;const g=c.createLinearGradient(0,0,W,H);g.addColorStop(0,'#1a0a05');g.addColorStop(1,'#0b0b0f');c.fillStyle=g;c.fillRect(0,0,W,H);
  c.strokeStyle='#ff4d1a';c.lineWidth=12;c.strokeRect(24,24,W-48,H-48);c.textAlign='left';c.fillStyle='#ff4d1a';c.font='900 64px system-ui,sans-serif';c.fillText('🔥 REKTCARD',70,130);
  c.fillStyle='#aaa';c.font='600 36px monospace';c.fillText(title,70,200);let y=300;c.fillStyle='#fff';c.font='600 46px system-ui,sans-serif';for(const l of lines){y=wrap(c,l,70,y,W-140,60)+30}
- const im=memeFor(score);if(im.complete&&im.naturalWidth){c.drawImage(im,W-70-400,H-160-400,400,400)}
+ const im=memeFor(score);if(im.complete&&im.naturalWidth){c.drawImage(im,W-70-300,H-130-300,300,300)}
  c.fillStyle='#ff4d1a';c.font='900 120px system-ui,sans-serif';c.fillText(score+'%',70,H-190);c.fillStyle='#ddd';c.font='600 40px system-ui,sans-serif';c.fillText('REKT SCORE',70,H-130);
  c.fillStyle='#777';c.font='28px system-ui,sans-serif';c.textAlign='right';c.fillText('for fun only · not financial advice',W-70,H-70)}
 const short=a=>a.length>16?a.slice(0,6)+'…'+a.slice(-4):a;
